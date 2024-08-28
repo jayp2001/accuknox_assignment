@@ -3,7 +3,7 @@ import CloseIcon from "@mui/icons-material/Close";
 
 function DataCard(props) {
     return (
-        <div className='card pt-2 pl-3 pr-1'>
+        <div className='card pt-2 pl-3 pr-1' key={'Data_card_' + props.index}>
             <div className='flex justify-between'>
                 <div className='cardHeader'>
                     {props?.data?.title ? props.data.title : 'Add Widget'}

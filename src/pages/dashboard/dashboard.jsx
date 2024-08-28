@@ -47,7 +47,6 @@ function Dashboard() {
     const error = useSelector((state) => state.widgetData.error);
     const success = useSelector((state) => state.widgetData.success);
     const dataList = useSelector((state) => state.widgetData.widgetList);
-    console.log('<DATA>', dataList)
     const [customWidgetFormdata, setCustomWidgetFormdata] = useState({
         title: '',
         desc: '',
@@ -78,7 +77,6 @@ function Dashboard() {
                 ...dataList,
                 [categoryName]: temArray
             }
-            console.log('newWWWW', newArray, temArray);
             dispatch(updateWidget(newArray))
         }
     }
